@@ -13,11 +13,3 @@ Test-Example-Project documentation
    page_1.rst
    page_2.rst
    page_3.rst
-
-
-Indices and tables
-===================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
