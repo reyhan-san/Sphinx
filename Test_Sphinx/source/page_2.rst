@@ -17,14 +17,17 @@ Why Sphinx-needs?
 Needs Lifescycle
 -----------------
 
-.. graphviz::
+.. uml::
 
-   digraph ProcessFlow {
-       Collect -> Resolve;
-       Resolve -> Analyze;
-       Analyze -> Render;
-       Render -> Validate;
-   }
+  @startuml
+  start
+  :Collect;
+  :Resolve;
+  :Analyze;
+  :Render;
+  :Validate;
+  stop
+  @enduml
 
 
 Creating Need items
@@ -39,12 +42,10 @@ item must have:
 
 Example of a basic requirement block
 
-.. code-block:: rst
+.. req:: Basic need example
+  :id: BE_1
 
-    .. req:: Basic need example
-        :id: basic_example
-
-    A basic example of a need item.
+  A basic example of a need item.
 
 
 You can add a need item types in conf.py as well to later use it as desired.
@@ -61,7 +62,7 @@ You can add a need item types in conf.py as well to later use it as desired.
     }]
 
     # example customized need item
-    .. can-be-anything-and-is-used-further:: Example
+    .. tutorial:: Example
         :id: any
         :tags: anything
         :layout: clean_l
@@ -69,6 +70,15 @@ You can add a need item types in conf.py as well to later use it as desired.
         :collapse: true
 
         <caption or contents of the item>
+
+.. can-be-anything-and-is-used-further:: Our new car
+  :id: T_CAR
+  :tags: tutorial
+  :layout: clean_l
+  :collapse: true
+
+  Presenting the “TeenTrek,” an autonomous driving car tailored.
+
 
 .. admonition:: Enforcing Valid need items
 
@@ -100,18 +110,16 @@ Custom link defined in conf.py
 Need items with Link
 ---------------------
 
-.. code-block:: rst
+.. tutorial:: P_001
+  :id: TUT_001
+  :tutorial_required_by: TUT_002
 
-    .. tutorial-project:: P_001
-        :id: TUT_001
-        :tutorial_required_by: TUT_002
+  This is the first tutorial.
 
-        This is the first tutorial.
+.. tutorial:: P_002
+  :id: TUT_002
 
-    .. tutorial-project:: P_002
-        :id: TUT_002
-
-        This tutorial depends on the first tutorial.
+  This tutorial depends on the first tutorial.
 
 Importing Need items
 ---------------------
@@ -133,7 +141,7 @@ For eg. we can modify an imported item by further adding tags and so on.
 
 .. code-block:: rst
 
-    .. tutorial-project:: TUT_001
+    .. tutorial:: TUT_001
         :id: TUT_001
         :tags: tutorial_tests
         :status: in_progress
