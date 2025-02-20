@@ -1,0 +1,294 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sphinx-needs Documentation &mdash; Test-Example-Project 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=4ae1632d" />
+      <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=a1090b8a" />
+      <link rel="stylesheet" type="text/css" href="_static/code-tabs.css?v=1bc26e2f" />
+      <link rel="stylesheet" type="text/css" href="_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
+      <link rel="stylesheet" type="text/css" href="_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
+      <link rel="stylesheet" type="text/css" href="_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
+      <link rel="stylesheet" type="text/css" href="_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
+      <link rel="stylesheet" type="text/css" href="_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
+      <link rel="stylesheet" type="text/css" href="_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
+      <link rel="stylesheet" type="text/css" href="_static/sphinx-needs/common_css/need_style.css?v=678fb11e" />
+      <link rel="stylesheet" type="text/css" href="_static/sphinx-needs/modern.css?v=803738c0" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=2709fde1"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="_static/copybutton.js?v=f281be69"></script>
+      <script src="_static/code-tabs.js?v=c983d12e"></script>
+      <script src="_static/sphinx-data-viewer/jsonview.bundle.js?v=18cd53c5"></script>
+      <script src="_static/sphinx-data-viewer/jsonview_loader.js?v=f7ff7e7d"></script>
+      <script src="_static/sphinx-needs/libs/html/datatables.min.js?v=8a4aee21"></script>
+      <script src="_static/sphinx-needs/libs/html/datatables_loader.js?v=a2cae175"></script>
+      <script src="_static/sphinx-needs/libs/html/sphinx_needs_collapse.js?v=dca66431"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Sphinx Needs Part Two" href="page_3.html" />
+    <link rel="prev" title="Sphinx Documentation" href="page_1.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html">
+            
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Sphinx:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="page_1.html">Sphinx Documentation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Sphinx-needs Documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#why-sphinx-needs">Why Sphinx-needs?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#needs-lifescycle">Needs Lifescycle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#creating-need-items">Creating Need items</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#linking-need-items">Linking need items</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#need-items-with-link">Need items with Link</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#importing-need-items">Importing Need items</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#modifying-need-items">Modifying need items</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#summarising-needs">Summarising needs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="page_3.html">Sphinx Needs Part Two</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Test-Example-Project</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Sphinx-needs Documentation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/page_2.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="sphinx-needs-documentation">
+<h1>Sphinx-needs Documentation<a class="headerlink" href="#sphinx-needs-documentation" title="Link to this heading"></a></h1>
+<p>Sphinx-Needs is an extension for Sphinx, a documentation generator commonly used for Python projects.
+This extension enhances Sphinx by adding support for managing requirements, specifications, test cases,
+and other structured information within documentation.</p>
+<section id="why-sphinx-needs">
+<h2>Why Sphinx-needs?<a class="headerlink" href="#why-sphinx-needs" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Requirement Management</p></li>
+<li><p>Traceability</p></li>
+<li><p>Allows user to filter, link and visualize structured data</p></li>
+<li><p>Customization</p></li>
+<li><p>Diagrams and tables generation</p></li>
+</ul>
+</section>
+<section id="needs-lifescycle">
+<h2>Needs Lifescycle<a class="headerlink" href="#needs-lifescycle" title="Link to this heading"></a></h2>
+<div class="graphviz"><img src="_images/graphviz-ba73a2c6297946e1dd06a4b5dc1250e54d7088ee.png" alt="digraph ProcessFlow {
+    Collect -&gt; Resolve;
+    Resolve -&gt; Analyze;
+    Analyze -&gt; Render;
+    Render -&gt; Validate;
+}" class="graphviz" /></div>
+</section>
+<section id="creating-need-items">
+<h2>Creating Need items<a class="headerlink" href="#creating-need-items" title="Link to this heading"></a></h2>
+<p>item must have:</p>
+<ul class="simple">
+<li><p>type/directive</p></li>
+<li><p>unique identifier</p></li>
+<li><p>title</p></li>
+<li><p>description</p></li>
+</ul>
+<p>Example of a basic requirement block</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">req</span><span class="p">::</span> Basic need example
+    <span class="nc">:id:</span> basic_example
+
+A basic example of a need item.
+</pre></div>
+</div>
+<p>You can add a need item types in conf.py as well to later use it as desired.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">needs_types</span> <span class="o">=</span> <span class="p">[</span>
+<span class="p">{</span>
+    <span class="s2">&quot;directive&quot;</span><span class="p">:</span> <span class="s2">&quot;can-be-anything-and-is-used-further&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Project&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;prefix&quot;</span><span class="p">:</span> <span class="s2">&quot;P_&quot;</span><span class="p">,</span>  <span class="c1"># prefix for auto-generated IDs</span>
+    <span class="s2">&quot;style&quot;</span><span class="p">:</span> <span class="s2">&quot;square&quot;</span><span class="p">,</span> <span class="c1"># style for the type in diagrams</span>
+    <span class="s2">&quot;color&quot;</span><span class="p">:</span> <span class="s2">&quot;#BFDD83&quot;</span><span class="p">,</span> <span class="c1"># color for the type in diagrams</span>
+<span class="p">}]</span>
+
+<span class="c1"># example customized need item</span>
+<span class="o">..</span> <span class="n">can</span><span class="o">-</span><span class="n">be</span><span class="o">-</span><span class="n">anything</span><span class="o">-</span><span class="ow">and</span><span class="o">-</span><span class="ow">is</span><span class="o">-</span><span class="n">used</span><span class="o">-</span><span class="n">further</span><span class="p">::</span> <span class="n">Example</span>
+    <span class="p">:</span><span class="nb">id</span><span class="p">:</span> <span class="nb">any</span>
+    <span class="p">:</span><span class="n">tags</span><span class="p">:</span> <span class="n">anything</span>
+    <span class="p">:</span><span class="n">layout</span><span class="p">:</span> <span class="n">clean_l</span>
+    <span class="p">:</span><span class="n">image</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">path</span><span class="o">&gt;</span>
+    <span class="p">:</span><span class="n">collapse</span><span class="p">:</span> <span class="n">true</span>
+
+    <span class="o">&lt;</span><span class="n">caption</span> <span class="ow">or</span> <span class="n">contents</span> <span class="n">of</span> <span class="n">the</span> <span class="n">item</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<div class="admonition-enforcing-valid-need-items admonition">
+<p class="admonition-title">Enforcing Valid need items</p>
+<p>The needs_id_required and needs_id_regex to define need ID formats.
+The needs_statuses, needs_tags and needs_warnings to check for disallowed values.
+These may emit warnings if values are not as expected.</p>
+</div>
+<p>Item can be referred using the item ID.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Item</span> <span class="ow">is</span> <span class="s2">&quot;:need:`any`&quot;</span> <span class="n">linked</span> <span class="n">here</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+<section id="linking-need-items">
+<h2>Linking need items<a class="headerlink" href="#linking-need-items" title="Link to this heading"></a></h2>
+<p>Custom link defined in conf.py</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>  <span class="n">need_extra_links</span> <span class="o">=</span> <span class="p">[</span>
+<span class="p">{</span>
+  <span class="s2">&quot;option&quot;</span><span class="p">:</span> <span class="s2">&quot;tutorial_required_by&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;incoming&quot;</span><span class="p">:</span> <span class="s2">&quot;requires&quot;</span><span class="p">,</span>  <span class="c1"># text to describe incoming links</span>
+  <span class="s2">&quot;outgoing&quot;</span><span class="p">:</span> <span class="s2">&quot;required by&quot;</span><span class="p">,</span>  <span class="c1"># text to describe outgoing links</span>
+  <span class="s2">&quot;style&quot;</span><span class="p">:</span> <span class="s2">&quot;#00AA00&quot;</span><span class="p">,</span>  <span class="c1"># color for the link in diagrams</span>
+<span class="p">},]</span>
+</pre></div>
+</div>
+</section>
+<section id="need-items-with-link">
+<h2>Need items with Link<a class="headerlink" href="#need-items-with-link" title="Link to this heading"></a></h2>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">tutorial-project</span><span class="p">::</span> P_001
+    <span class="nc">:id:</span> TUT_001
+    <span class="nc">:tutorial_required_by:</span> TUT_002
+
+    This is the first tutorial.
+
+<span class="p">..</span> <span class="ow">tutorial-project</span><span class="p">::</span> P_002
+    <span class="nc">:id:</span> TUT_002
+
+    This tutorial depends on the first tutorial.
+</pre></div>
+</div>
+</section>
+<section id="importing-need-items">
+<h2>Importing Need items<a class="headerlink" href="#importing-need-items" title="Link to this heading"></a></h2>
+<p>importing of test cases to make them easier to read and select</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">needimport</span><span class="p">::</span> _static/test_cases.json
+    <span class="nc">:tags:</span> test,automation
+    <span class="nc">:collapse:</span> false
+</pre></div>
+</div>
+</section>
+<section id="modifying-need-items">
+<h2>Modifying need items<a class="headerlink" href="#modifying-need-items" title="Link to this heading"></a></h2>
+<p>We can further modify an already existing need item using the needextend.
+For eg. we can modify an imported item by further adding tags and so on.</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">tutorial-project</span><span class="p">::</span> TUT_001
+    <span class="nc">:id:</span> TUT_001
+    <span class="nc">:tags:</span> tutorial_tests
+    <span class="nc">:status:</span> in_progress
+
+<span class="p">..</span> <span class="ow">needextend</span><span class="p">::</span> &quot;tutorial_tests&quot; in tags
+    <span class="nc">:+tutorial_tests:</span> T_RADAR
+    <span class="nc">:status:</span> open
+</pre></div>
+</div>
+</section>
+<section id="summarising-needs">
+<h2>Summarising needs<a class="headerlink" href="#summarising-needs" title="Link to this heading"></a></h2>
+<p>Summarises all need items. Can use any of them below</p>
+<ul class="simple">
+<li><p>needlist - to display a list of need items</p></li>
+<li><p>needtable - to display a table of need items</p></li>
+<li><p>needflow - to display a flow diagram of need items</p></li>
+</ul>
+<p><strong>Examples:</strong></p>
+<figure class="align-left" id="id1">
+<a class="reference internal image-reference" href="_images/needlist.png"><img alt="_images/needlist.png" src="_images/needlist.png" style="width: 644.0px; height: 302.4px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">needlist summarising need items</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-left" id="id2">
+<a class="reference internal image-reference" href="_images/needtable.png"><img alt="_images/needtable.png" src="_images/needtable.png" style="width: 655.9px; height: 436.09999999999997px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">needtable summarising need items in a table</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-left" id="id3">
+<a class="reference internal image-reference" href="_images/needtable_dynamic.png"><img alt="_images/needtable_dynamic.png" src="_images/needtable_dynamic.png" style="width: 569.8px; height: 553.6999999999999px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Needtable summarizing need items in a datatable.</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="page_1.html" class="btn btn-neutral float-left" title="Sphinx Documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="page_3.html" class="btn btn-neutral float-right" title="Sphinx Needs Part Two" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Reyhan.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
