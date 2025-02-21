@@ -1,0 +1,460 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sphinx-needs Documentation &mdash; Test-Example-Project 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=4ae1632d" />
+      <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=a1090b8a" />
+      <link rel="stylesheet" type="text/css" href="_static/code-tabs.css?v=1bc26e2f" />
+      <link rel="stylesheet" type="text/css" href="_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
+      <link rel="stylesheet" type="text/css" href="_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
+      <link rel="stylesheet" type="text/css" href="_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
+      <link rel="stylesheet" type="text/css" href="_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
+      <link rel="stylesheet" type="text/css" href="_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
+      <link rel="stylesheet" type="text/css" href="_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
+      <link rel="stylesheet" type="text/css" href="_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
+      <link rel="stylesheet" type="text/css" href="_static/sphinx-needs/modern.css?v=803738c0" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=2709fde1"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="_static/copybutton.js?v=f281be69"></script>
+      <script src="_static/code-tabs.js?v=c983d12e"></script>
+      <script src="_static/sphinx-data-viewer/jsonview.bundle.js?v=18cd53c5"></script>
+      <script src="_static/sphinx-data-viewer/jsonview_loader.js?v=f7ff7e7d"></script>
+      <script src="_static/sphinx-needs/libs/html/datatables.min.js?v=8a4aee21"></script>
+      <script src="_static/sphinx-needs/libs/html/datatables_loader.js?v=a2cae175"></script>
+      <script src="_static/sphinx-needs/libs/html/sphinx_needs_collapse.js?v=dca66431"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Sphinx Needs Part Two" href="page_3.html" />
+    <link rel="prev" title="Sphinx Documentation" href="page_1.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html">
+            
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Sphinx:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="page_1.html">Sphinx Documentation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Sphinx-needs Documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#why-sphinx-needs">Why Sphinx-needs?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#needs-lifescycle">Needs Lifescycle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#creating-need-items">Creating Need items</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#linking-need-items">Linking need items</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#need-items-with-link">Need items with Link</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#importing-need-items">Importing Need items</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#modifying-need-items">Modifying need items</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#summarising-needs">Summarising needs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="page_3.html">Sphinx Needs Part Two</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Test-Example-Project</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Sphinx-needs Documentation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/page_2.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="sphinx-needs-documentation">
+<h1>Sphinx-needs Documentation<a class="headerlink" href="#sphinx-needs-documentation" title="Link to this heading"></a></h1>
+<p>Sphinx-Needs is an extension for Sphinx, a documentation generator commonly used for Python projects.
+This extension enhances Sphinx by adding support for managing requirements, specifications, test cases,
+and other structured information within documentation.</p>
+<section id="why-sphinx-needs">
+<h2>Why Sphinx-needs?<a class="headerlink" href="#why-sphinx-needs" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Requirement Management</p></li>
+<li><p>Traceability</p></li>
+<li><p>Allows user to filter, link and visualize structured data</p></li>
+<li><p>Customization</p></li>
+<li><p>Diagrams and tables generation</p></li>
+</ul>
+</section>
+<section id="needs-lifescycle">
+<h2>Needs Lifescycle<a class="headerlink" href="#needs-lifescycle" title="Link to this heading"></a></h2>
+<p class="plantuml">
+<img src="_images/plantuml-8a21771e2fb14c5dfba9ffb900129f4756e4440d.png" alt="&#64;startuml
+start
+:Collect;
+:Resolve;
+:Analyze;
+:Render;
+:Validate;
+stop
+&#64;enduml"/>
+</p>
+</section>
+<section id="creating-need-items">
+<h2>Creating Need items<a class="headerlink" href="#creating-need-items" title="Link to this heading"></a></h2>
+<p>item must have:</p>
+<ul class="simple">
+<li><p>type/directive</p></li>
+<li><p>unique identifier</p></li>
+<li><p>title</p></li>
+<li><p>description</p></li>
+</ul>
+<p>Example of a basic requirement block</p>
+<div class="need_container docutils container" id="SNCB-ddf9f462">
+<table class="need needs_grid_simple needs_layout_clean needs_style_none needs_type_req docutils align-default" id="BE_1">
+<tbody>
+<tr class="need head row-odd"><td class="need head"><div class="needs_head line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Requirement</span></span>: </span><strong><span><span class="needs_title"><span class="needs_data">Basic need example</span></span></span></strong><span> <span class="needs-id"><a class="reference internal" href="#BE_1" title="BE_1">BE_1</a></span>  <span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span> </span></div>
+</div>
+</td>
+</tr>
+<tr class="need meta row-even"><td class="need meta"><div class="needs_meta line-block">
+<div class="line"><span><span></span></span></div>
+<div class="line"><span></span></div>
+</div>
+</td>
+</tr>
+<tr class="need content row-odd"><td class="need content" colspan="1"><p>A basic example of a need item.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>You can add a need item types in conf.py as well to later use it as desired.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">needs_types</span> <span class="o">=</span> <span class="p">[</span>
+<span class="p">{</span>
+    <span class="s2">&quot;directive&quot;</span><span class="p">:</span> <span class="s2">&quot;can-be-anything-and-is-used-further&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Project&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;prefix&quot;</span><span class="p">:</span> <span class="s2">&quot;P_&quot;</span><span class="p">,</span>  <span class="c1"># prefix for auto-generated IDs</span>
+    <span class="s2">&quot;style&quot;</span><span class="p">:</span> <span class="s2">&quot;square&quot;</span><span class="p">,</span> <span class="c1"># style for the type in diagrams</span>
+    <span class="s2">&quot;color&quot;</span><span class="p">:</span> <span class="s2">&quot;#BFDD83&quot;</span><span class="p">,</span> <span class="c1"># color for the type in diagrams</span>
+<span class="p">}]</span>
+
+<span class="c1"># example customized need item</span>
+<span class="o">..</span> <span class="n">tutorial</span><span class="p">::</span> <span class="n">Example</span>
+    <span class="p">:</span><span class="nb">id</span><span class="p">:</span> <span class="nb">any</span>
+    <span class="p">:</span><span class="n">tags</span><span class="p">:</span> <span class="n">anything</span>
+    <span class="p">:</span><span class="n">layout</span><span class="p">:</span> <span class="n">clean_l</span>
+    <span class="p">:</span><span class="n">image</span><span class="p">:</span> <span class="o">&lt;</span><span class="n">path</span><span class="o">&gt;</span>
+    <span class="p">:</span><span class="n">collapse</span><span class="p">:</span> <span class="n">true</span>
+
+    <span class="o">&lt;</span><span class="n">caption</span> <span class="ow">or</span> <span class="n">contents</span> <span class="n">of</span> <span class="n">the</span> <span class="n">item</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<div class="need_container docutils container" id="SNCB-efdcbccb">
+<table class="need needs_grid_simple_side_left needs_layout_clean_l needs_style_none needs_type_can-be-anything-and-is-used-further docutils align-default" id="T_CAR">
+<tbody>
+<tr class="need head row-odd"><td class="need side" rowspan="3"><div class="needs_side line-block">
+<div class="line"><span></span></div>
+</div>
+</td>
+<td class="need head"><div class="needs_head line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Project</span></span>: </span><strong><span><span class="needs_title"><span class="needs_data">Our new car</span></span></span></strong><span> <span class="needs-id"><a class="reference internal" href="#T_CAR" title="T_CAR">T_CAR</a></span> <span class="needs needs_collapse" id="target__hide__meta"><span class="needs collapsed collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span> </span></div>
+</div>
+</td>
+</tr>
+<tr class="need meta row-even"><td class="need meta"><div class="needs_meta line-block">
+<div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">tutorial</span></span></span></div>
+<div class="line"><span class="needs_layout"><span class="needs_label">layout: </span><span class="needs_data">clean_l</span></span></div>
+</span></span></div>
+<div class="line"><span></span></div>
+</div>
+</td>
+</tr>
+<tr class="need content row-odd"><td class="need content" colspan="1"><p>Presenting the “TeenTrek,” an autonomous driving car tailored.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition-enforcing-valid-need-items admonition">
+<p class="admonition-title">Enforcing Valid need items</p>
+<p>The needs_id_required and needs_id_regex to define need ID formats.
+The needs_statuses, needs_tags and needs_warnings to check for disallowed values.
+These may emit warnings if values are not as expected.</p>
+</div>
+<p>Item can be referred using the item ID.</p>
+<p>Item is <a class="reference internal" href="#T_CAR" title="T_CAR"><em class="xref need">Our new car (T_CAR)</em></a> linked here.</p>
+</section>
+<section id="linking-need-items">
+<h2>Linking need items<a class="headerlink" href="#linking-need-items" title="Link to this heading"></a></h2>
+<p>Custom link defined in conf.py</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>  <span class="n">need_extra_links</span> <span class="o">=</span> <span class="p">[</span>
+<span class="p">{</span>
+  <span class="s2">&quot;option&quot;</span><span class="p">:</span> <span class="s2">&quot;tutorial_required_by&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;incoming&quot;</span><span class="p">:</span> <span class="s2">&quot;requires&quot;</span><span class="p">,</span>  <span class="c1"># text to describe incoming links</span>
+  <span class="s2">&quot;outgoing&quot;</span><span class="p">:</span> <span class="s2">&quot;required by&quot;</span><span class="p">,</span>  <span class="c1"># text to describe outgoing links</span>
+  <span class="s2">&quot;style&quot;</span><span class="p">:</span> <span class="s2">&quot;#00AA00&quot;</span><span class="p">,</span>  <span class="c1"># color for the link in diagrams</span>
+<span class="p">},]</span>
+</pre></div>
+</div>
+</section>
+<section id="need-items-with-link">
+<h2>Need items with Link<a class="headerlink" href="#need-items-with-link" title="Link to this heading"></a></h2>
+<div class="need_container docutils container" id="SNCB-b1b3c90b">
+<table class="need needs_grid_simple needs_layout_clean needs_style_none needs_type_tutorial docutils align-default" id="TUT_001">
+<tbody>
+<tr class="need head row-odd"><td class="need head"><div class="needs_head line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Tutorial</span></span>: </span><strong><span><span class="needs_title"><span class="needs_data">P_001</span></span></span></strong><span> <span class="needs-id"><a class="reference internal" href="#TUT_001" title="TUT_001">TUT_001</a></span>  <span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span> </span></div>
+</div>
+</td>
+</tr>
+<tr class="need meta row-even"><td class="need meta"><div class="needs_meta line-block">
+<div class="line"><span><span></span></span></div>
+<div class="line"><span><div class="line">required by: <span class="tutorial_required_by"><span><a class="reference internal" href="#TUT_002" title="TUT_001">TUT_002</a></span></span></div>
+</span></div>
+</div>
+</td>
+</tr>
+<tr class="need content row-odd"><td class="need content" colspan="1"><p>This is the first tutorial.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="need_container docutils container" id="SNCB-1d73defa">
+<table class="need needs_grid_simple needs_layout_clean needs_style_none needs_type_tutorial docutils align-default" id="TUT_002">
+<tbody>
+<tr class="need head row-odd"><td class="need head"><div class="needs_head line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Tutorial</span></span>: </span><strong><span><span class="needs_title"><span class="needs_data">P_002</span></span></span></strong><span> <span class="needs-id"><a class="reference internal" href="#TUT_002" title="TUT_002">TUT_002</a></span>  <span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span> </span></div>
+</div>
+</td>
+</tr>
+<tr class="need meta row-even"><td class="need meta"><div class="needs_meta line-block">
+<div class="line"><span><span></span></span></div>
+<div class="line"><span><div class="line">requires: <span class="tutorial_required_by"><span><a class="reference internal" href="#TUT_001" title="TUT_002">TUT_001</a></span></span></div>
+</span></div>
+</div>
+</td>
+</tr>
+<tr class="need content row-odd"><td class="need content" colspan="1"><p>This tutorial depends on the first tutorial.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="importing-need-items">
+<h2>Importing Need items<a class="headerlink" href="#importing-need-items" title="Link to this heading"></a></h2>
+<p>importing of test cases to make them easier to read and select</p>
+<div class="need_container docutils container" id="SNCB-24a45415">
+<table class="need needs_grid_simple needs_layout_clean needs_style_none needs_type_unit-test docutils align-default" id="UTC_001">
+<tbody>
+<tr class="need head row-odd"><td class="need head"><div class="needs_head line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Unit Test</span></span>: </span><strong><span><span class="needs_title"><span class="needs_data">Unit Test Case: Login Functionality</span></span></span></strong><span> <span class="needs-id"><a class="reference internal" href="#UTC_001" title="UTC_001">UTC_001</a></span>  <span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span> </span></div>
+</div>
+</td>
+</tr>
+<tr class="need meta row-even"><td class="need meta"><div class="needs_meta line-block">
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">open</span></span></div>
+<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">tutorial</span><span class="needs_spacer">, </span><span class="needs_data">tutorial_tests</span></span></span></div>
+</span></span></div>
+<div class="line"><span></span></div>
+</div>
+</td>
+</tr>
+<tr class="need content row-odd"><td class="need content" colspan="1"><p>Verify user login with valid and invalid credentials.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="need_container docutils container" id="SNCB-f5bac276">
+<table class="need needs_grid_simple needs_layout_clean needs_style_none needs_type_unit-test docutils align-default" id="UTC_002">
+<tbody>
+<tr class="need head row-odd"><td class="need head"><div class="needs_head line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Unit Test</span></span>: </span><strong><span><span class="needs_title"><span class="needs_data">Unit Test Case: Payment Processing</span></span></span></strong><span> <span class="needs-id"><a class="reference internal" href="#UTC_002" title="UTC_002">UTC_002</a></span>  <span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span> </span></div>
+</div>
+</td>
+</tr>
+<tr class="need meta row-even"><td class="need meta"><div class="needs_meta line-block">
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">in progress</span></span></div>
+<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">tutorial</span><span class="needs_spacer">, </span><span class="needs_data">tutorial_tests</span></span></span></div>
+</span></span></div>
+<div class="line"><span></span></div>
+</div>
+</td>
+</tr>
+<tr class="need content row-odd"><td class="need content" colspan="1"><p>Check if payment gateway handles transactions correctly.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="need_container docutils container" id="SNCB-6104c6f0">
+<table class="need needs_grid_simple needs_layout_clean needs_style_none needs_type_unit-test docutils align-default" id="UTC_003">
+<tbody>
+<tr class="need head row-odd"><td class="need head"><div class="needs_head line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Unit Test</span></span>: </span><strong><span><span class="needs_title"><span class="needs_data">Unit Test Case: Profile Update</span></span></span></strong><span> <span class="needs-id"><a class="reference internal" href="#UTC_003" title="UTC_003">UTC_003</a></span>  <span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span> </span></div>
+</div>
+</td>
+</tr>
+<tr class="need meta row-even"><td class="need meta"><div class="needs_meta line-block">
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">closed</span></span></div>
+<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">tutorial</span><span class="needs_spacer">, </span><span class="needs_data">tutorial_tests</span></span></span></div>
+</span></span></div>
+<div class="line"><span></span></div>
+</div>
+</td>
+</tr>
+<tr class="need content row-odd"><td class="need content" colspan="1"><p>Ensure profile updates are correctly saved in the database.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="modifying-need-items">
+<h2>Modifying need items<a class="headerlink" href="#modifying-need-items" title="Link to this heading"></a></h2>
+<p>We can further modify an already existing need item using the needextend.
+For eg. we can modify an imported item by further adding tags and so on.</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">tutorial</span><span class="p">::</span> TUT_001
+    <span class="nc">:id:</span> TUT_001
+    <span class="nc">:tags:</span> tutorial_tests
+    <span class="nc">:status:</span> in_progress
+
+<span class="p">..</span> <span class="ow">needextend</span><span class="p">::</span> &quot;tutorial_tests&quot; in tags
+    <span class="nc">:+tutorial_tests:</span> T_RADAR
+    <span class="nc">:status:</span> open
+</pre></div>
+</div>
+</section>
+<section id="summarising-needs">
+<h2>Summarising needs<a class="headerlink" href="#summarising-needs" title="Link to this heading"></a></h2>
+<p>Summarises all need items. Can use any of them below</p>
+<ul class="simple">
+<li><p>needlist - to display a list of need items</p></li>
+<li><p>needtable - to display a table of need items</p></li>
+<li><p>needflow - to display a flow diagram of need items</p></li>
+</ul>
+<p><strong>Examples:</strong></p>
+<div class="needstable_wrapper docutils container" id="needtable-page_2-0">
+<table class="NEEDS_TABLE docutils align-default" id="needtable-page_2-0-table_node">
+<colgroup>
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 50.0%" />
+<col style="width: 16.7%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>ID</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Title</p></th>
+<th class="head"><p>Status</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="need row-even"><td class="needs_id"><p><a class="reference internal" href="#T_CAR">T_CAR</a></p></td>
+<td class="needs_type"><p>can-be-anything-and-is-used-further</p></td>
+<td class="needs_title"><p>Our new car</p></td>
+<td class="needs_status"><p></p></td>
+</tr>
+<tr class="need row-odd"><td class="needs_id"><p><a class="reference internal" href="#UTC_001">UTC_001</a></p></td>
+<td class="needs_type"><p>unit-test</p></td>
+<td class="needs_title"><p>Unit Test Case: Login Functionality</p></td>
+<td class="needs_status"><p>open</p></td>
+</tr>
+<tr class="need row-even"><td class="needs_id"><p><a class="reference internal" href="#UTC_002">UTC_002</a></p></td>
+<td class="needs_type"><p>unit-test</p></td>
+<td class="needs_title"><p>Unit Test Case: Payment Processing</p></td>
+<td class="needs_status"><p>in progress</p></td>
+</tr>
+<tr class="need row-odd"><td class="needs_id"><p><a class="reference internal" href="#UTC_003">UTC_003</a></p></td>
+<td class="needs_type"><p>unit-test</p></td>
+<td class="needs_title"><p>Unit Test Case: Profile Update</p></td>
+<td class="needs_status"><p>closed</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<figure class="align-left" id="id1">
+<a class="reference internal image-reference" href="_images/needlist.png"><img alt="_images/needlist.png" src="_images/needlist.png" style="width: 644.0px; height: 302.4px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">needlist summarising need items</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-left" id="id2">
+<a class="reference internal image-reference" href="_images/needtable.png"><img alt="_images/needtable.png" src="_images/needtable.png" style="width: 655.9px; height: 436.09999999999997px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">needtable summarising need items in a table</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-left" id="id3">
+<a class="reference internal image-reference" href="_images/needtable_dynamic.png"><img alt="_images/needtable_dynamic.png" src="_images/needtable_dynamic.png" style="width: 569.8px; height: 553.6999999999999px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Needtable summarizing need items in a datatable.</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="page_1.html" class="btn btn-neutral float-left" title="Sphinx Documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="page_3.html" class="btn btn-neutral float-right" title="Sphinx Needs Part Two" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Reyhan.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
