@@ -1,0 +1,35 @@
+{
+    "project": "Test Cases Project",
+    "current_version": "1.0",
+    "versions": {
+        "1.0": {
+            "date": "2024-02-21",
+            "needs": {
+                "UTC_001": {
+                    "id": "UTC_001",
+                    "type": "unit-test",
+                    "title": "Unit Test Case: Login Functionality",
+                    "status": "open",
+                    "tags": ["tutorial", "tutorial_tests"],
+                    "description": "Verify user login with valid and invalid credentials."
+                },
+                "UTC_002": {
+                    "id": "UTC_002",
+                    "type": "unit-test",
+                    "title": "Unit Test Case: Payment Processing",
+                    "status": "in progress",
+                    "tags": ["tutorial", "tutorial_tests"],
+                    "description": "Check if payment gateway handles transactions correctly."
+                },
+                "UTC_003": {
+                    "id": "UTC_003",
+                    "type": "unit-test",
+                    "title": "Unit Test Case: Profile Update",
+                    "status": "closed",
+                    "tags": ["tutorial", "tutorial_tests"],
+                    "description": "Ensure profile updates are correctly saved in the database."
+                }
+            }
+        }
+    }
+}

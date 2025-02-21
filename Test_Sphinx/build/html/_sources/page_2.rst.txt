@@ -88,9 +88,7 @@ You can add a need item types in conf.py as well to later use it as desired.
 
 Item can be referred using the item ID.
 
-.. code-block:: python
-
-    Item is ":need:`any`" linked here.
+Item is :need:`T_CAR` linked here.
 
 Linking need items
 -------------------
@@ -126,11 +124,8 @@ Importing Need items
 
 importing of test cases to make them easier to read and select
 
-.. code-block:: rst
-
-    .. needimport:: _static/test_cases.json
-        :tags: test,automation
-        :collapse: false
+.. needimport:: _static/test_cases.json
+  :collapse: false
 
 
 Modifying need items

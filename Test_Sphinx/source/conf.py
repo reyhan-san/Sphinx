@@ -68,9 +68,9 @@ needs_types = [
     {
         "directive": "can-be-anything-and-is-used-further",
         "title": "Project",
-        "prefix": "P_",  # prefix for auto-generated IDs
-        "style": "square", # style for the type in diagrams
-        "color": "#BFDD83", # color for the type in diagrams
+        "prefix": "P_",
+        "style": "square",
+        "color": "#BFDD83",
     },
     {
         "directive": "tutorial",
@@ -78,6 +78,13 @@ needs_types = [
         "prefix": "TUT_",
         "style": "rectangle",
         "color": "#BFD8D2",
+    },
+    {
+        "directive": "unit-test",
+        "title": "Unit Test",
+        "prefix": "UTC_",
+        "style": "rectangle",
+        "color": "#FFD700",
     }]
 
 # Define own options
