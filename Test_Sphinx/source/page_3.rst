@@ -33,6 +33,14 @@ Closed: :need_count:`'tutorial_tests' in tags and status == 'closed'`
 
 In Progress: :need_count:`'tutorial_tests' in tags and status == 'in progress'`
 
+.. needpie:: Test Status
+  :labels: Open, In progress, Closed
+  :legend:
+
+  'tutorial_tests' in tags and status == 'open'
+  'tutorial_tests' in tags and status == 'in progress'
+  'tutorial_tests' in tags and status == 'closed'
+
 .. code-block:: rst
 
     Open: :need_count:`'tutorial_tests' in tags and status == 'open'`
