@@ -156,6 +156,12 @@ Summarises all need items. Can use any of them below
 
 **Examples:**
 
+.. needtable::
+  :tags: tutorial
+  :sort: id
+  :columns: id,type,title,status
+  :style: table
+
 .. figure:: /images/needlist.png
     :align: left
     :scale: 70%

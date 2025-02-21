@@ -27,6 +27,12 @@ Analysing Metrics
 * needpie directive - to display a pie chart of need items
 * needbar directive - to display a bar chart of need items
 
+Open: :need_count:`'tutorial_tests' in tags and status == 'open'`
+
+Closed: :need_count:`'tutorial_tests' in tags and status == 'closed'`
+
+In Progress: :need_count:`'tutorial_tests' in tags and status == 'in progress'`
+
 .. code-block:: rst
 
     Open: :need_count:`'tutorial_tests' in tags and status == 'open'`
